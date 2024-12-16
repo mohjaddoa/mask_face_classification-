@@ -4,7 +4,6 @@ import numpy as np
 from tensorflow import keras
 import tensorflow as tf
 
-tf.config.set_visible_devices([], 'GPU')
 
 loaded_model = keras.models.load_model('my_model.keras')
 
