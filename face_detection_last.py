@@ -2,6 +2,8 @@ import streamlit as st
 import cv2
 import numpy as np
 from tensorflow import keras
+tf.config.set_visible_devices([], 'GPU')
+
 loaded_model = keras.models.load_model('my_model.keras')
 
 # Load pre-trained Haar Cascade for face detection
